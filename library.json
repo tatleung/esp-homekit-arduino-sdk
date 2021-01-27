@@ -17,7 +17,7 @@
     }
   ],
   "license": "MIT",
-  "frameworks": "arduino",
+  "frameworks": "espidf",
   "platforms": "espressif32",
   "examples": "examples/*/*.cpp",
   "build": {
