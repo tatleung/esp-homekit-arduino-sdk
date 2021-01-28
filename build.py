@@ -29,7 +29,7 @@ if len(glob.glob("lib/*.c")) == 0:
         if "example" in dirpath or "test" in dirpath or "tests" in dirpath:
             continue
         for file in filenames:
-            if file.endswith(".c") or file.endswith(".h") and file[:-2] not in mfi_source:
+            if file.endswith(".c") or file.endswith(".h"): # and file[:-2] not in mfi_source:
                 shutil.move(dirpath + "/" + file, "lib/")
 
     #
